@@ -19,12 +19,12 @@ import codecs
 from sklearn.model_selection import train_test_split
 
 from collections import Counter
-from lib.mnnl import FFSequencePredictor, Layer, RNNSequencePredictor, BiRNNSequencePredictor
-from lib.mio import read_conll_file, load_embeddings_file
+from .lib.mnnl import FFSequencePredictor, Layer, RNNSequencePredictor, BiRNNSequencePredictor
+from .lib.mio import read_conll_file, load_embeddings_file
 
 UNK = "_UNK"
 
-from lib.mmappers import TRAINER_MAP, ACTIVATION_MAP, INITIALIZER_MAP, BUILDERS
+from .lib.mmappers import TRAINER_MAP, ACTIVATION_MAP, INITIALIZER_MAP, BUILDERS
 
 def main():
     parser = argparse.ArgumentParser(description="""Run the NN tagger""")

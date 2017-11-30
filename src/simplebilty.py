@@ -20,9 +20,9 @@ from collections import Counter
 
 from progress.bar import Bar
 
-from lib.mnnl import FFSequencePredictor, Layer, RNNSequencePredictor, BiRNNSequencePredictor
-from lib.mio import read_conll_file, load_embeddings_file
-from lib.mmappers import TRAINER_MAP
+from .lib.mnnl import FFSequencePredictor, Layer, RNNSequencePredictor, BiRNNSequencePredictor
+from .lib.mio import read_conll_file, load_embeddings_file
+from .lib.mmappers import TRAINER_MAP
 
 
 def main():
